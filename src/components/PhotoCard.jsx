@@ -25,7 +25,7 @@ function PhotoCard({ photo, isFavourite, toggleFavourite }) {
         <button type="button" onClick={()=>toggleFavourite(photo.id)}
          aria-pressed={isFavourite}
         aria-label={isFavourite ? "Remove from favourites" : "Add to favourites"} 
-        className={`round-full p-1 transition-colors duration-300 ${isFavourite ? "text-red-500" : "text-gray-400 hover:text-red-500"}`} 
+        className={`rounded-full p-1 transition-colors duration-300 ${isFavourite ? "text-red-500" : "text-gray-400 hover:text-red-500"}`} 
         >
         <HeartIcon filled={isFavourite} />
         </button></div>
