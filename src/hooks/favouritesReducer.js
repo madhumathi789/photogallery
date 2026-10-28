@@ -25,6 +25,5 @@ export function saveFavourites(favourites) {
     try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(favourites));
     } catch {
-        // storage unavailable, ignore
     }
 }
